@@ -1,4 +1,4 @@
-"""完蛋指数公开版：精确有理数计算；不从文本自动判档。"""
+"""临界指数公开版：精确有理数计算；不从文本自动判档。"""
 
 import argparse
 from fractions import Fraction as Fr
@@ -66,7 +66,7 @@ def evaluate(r, c=0, scheme="B", fatal="unknown", reviewed=True):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="完蛋指数计算器：输入人工复核后的档位。")
+    parser = argparse.ArgumentParser(description="临界指数计算器：输入人工复核后的档位。")
     parser.add_argument("grades", nargs=6, choices=[str(x) for x in GRADES] + ["?"],
                         help="现金、业务与收入、交付、团队、治理、必要经营条件；? 表示未知")
     parser.add_argument("--chains", default="0", choices=[str(x) for x in CVALS] + ["?"])
