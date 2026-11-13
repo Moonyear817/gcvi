@@ -1,7 +1,7 @@
 from fractions import Fraction
 import unittest
 
-from wandan import a_raw, b_raw, evaluate, rhu
+from gcvi import a_raw, b_raw, evaluate, rhu
 from enumerate_rules import build_states, check_basic, check_monotonicity, tier_ranges
 
 

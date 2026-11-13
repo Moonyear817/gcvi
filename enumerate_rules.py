@@ -1,4 +1,4 @@
-"""临界指数：方案A与方案B在有限形式域上的枚举校核。
+"""GCVI：方案A与方案B在有限形式域上的枚举校核。
 
 本脚本只检验规则的数学性质，并在形式状态集合上计算描述统计。
 状态集合上的均匀计数不是真实企业的分布，所得比例不是经验频率。
@@ -13,7 +13,7 @@ import random
 import time
 
 
-from wandan import GRADES, UPPER_B, CVALS, N, ALPHA, CAP, admissible, rhu, a_raw, b_raw
+from gcvi import GRADES, UPPER_B, CVALS, N, ALPHA, CAP, admissible, rhu, a_raw, b_raw
 
 
 def build_states():
